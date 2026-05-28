@@ -1,5 +1,5 @@
 import { useState } from "react";
-import bg from "../assets/Robot2.jpg";
+import bg from "../assets/Robot14.webp";
 import { IoIosEye } from "react-icons/io";
 import { IoIosEyeOff } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
