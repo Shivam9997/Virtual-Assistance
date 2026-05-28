@@ -1,5 +1,6 @@
 import { useState } from "react";
-import bg from "../assets/Robot2.jpg";
+import bg from "../assets/Robot11.webp";
+// import bg from "../assets/Robot13.jpg";
 import { IoIosEye } from "react-icons/io";
 import { IoIosEyeOff } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
@@ -20,8 +21,8 @@ const SignIn = () => {
 
   const handleSignIn=async (e)=>{
         e.preventDefault()
-        setErr("")
         setLoading(true)
+        setErr("")
 
      try {
       const result= await axios.post(`${serverUrl}/api/auth/signin`,{
@@ -33,8 +34,8 @@ const SignIn = () => {
       
      } catch (error) {
       console.log(error.response.data)
-      setUserData(null)
       setLoading(false)
+      setUserData(null)
       setErr(error.response.data.message)
       
      }
